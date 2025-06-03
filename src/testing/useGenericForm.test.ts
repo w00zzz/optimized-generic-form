@@ -119,9 +119,7 @@ describe("useGenericForm", () => {
       } as unknown as React.FormEvent);
     });
 
-    expect(result.current.formError).toBe(
-      "Por favor, corrige los errores en el formulario"
-    );
+    expect(result.current.formError).toBe("Please fix the errors in the form");
     expect(mockEnviarFormulario).not.toHaveBeenCalled();
   });
 });
