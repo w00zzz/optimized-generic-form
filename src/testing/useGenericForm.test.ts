@@ -1,6 +1,6 @@
 import { renderHook, act } from "@testing-library/react";
 import { useGenericForm, type FormControl } from "../hooks/useGenericForm";
-import { vi, describe, it, expect } from "vitest";
+import { vi, describe, it, expect, beforeEach } from "vitest";
 
 describe("useGenericForm", () => {
   const controlesIniciales: FormControl[] = [
@@ -28,6 +28,11 @@ describe("useGenericForm", () => {
   ];
 
   const mockEnviarFormulario = vi.fn();
+
+  // Reiniciar el estado del mock antes de cada prueba
+  beforeEach(() => {
+    mockEnviarFormulario.mockClear();
+  });
 
   it("debería inicializarse con los controles dados", () => {
     const { result } = renderHook(() =>
