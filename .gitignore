@@ -1,8 +1,8 @@
 # Node modules
-node_modules/
+node_modules
 
 # Build output
-dist/
+dist
 
 # Local environment files
 .env
@@ -10,7 +10,7 @@ dist/
 .env.*.local
 
 # Vite cache
-.vite/
+.vite
 
 # Log files
 npm-debug.log*
@@ -19,8 +19,8 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Editor directories and files
-.idea/
-.vscode/
+.idea
+.vscode
 *.suo
 *.ntvs*
 *.njsproj
@@ -30,7 +30,7 @@ pnpm-debug.log*
 .DS_Store
 
 # Optional: coverage reports
-coverage/
+coverage
 
 # Optional: typescript build info
 *.tsbuildinfo
